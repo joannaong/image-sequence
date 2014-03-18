@@ -1,0 +1,19 @@
+{
+  "name": "base",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ryanandal/base",
+  "authors": [
+    "Ryan Andal <ryan@thesecretlocation.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dist"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "normalize.css": "~3.0.0"
+  }
+}
