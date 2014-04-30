@@ -1,31 +1,10 @@
-/*
- * Main SASS file
- * Try to break up all of your code into separate files in sass
- * to make it easy to search through your code editor and find 
- * the corresponding codebase
- */
+@import dependency/var
+@import dependency/function
+@import dependency/helper-classes
+@import dependency/mixin
 
-
-/*
- * Normalize - Currently there is no way to import a css file into sass
- * This will eventually introduced intot he spec but temporarily we will 
- * keep normalize in libs, future implementation will look like this: 
- * @import ../../bower_components/normalize.css/normalize.css
- */
-
-@import lib/normalize.scss
-
-
-/*
- * Import additional modules
- */
-
-@import baseline
-
-
-/*
- * Custom Styles
- */
+@import base/reset
+@import base/type
 
 body
-	background: lightgray
+	background-color: yellow

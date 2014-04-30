@@ -1,13 +1,27 @@
-//-------------------------------------------------------------------------------------
+//-------------------------------------------------------------
 //- Base jade file that each page extends
 //- Any alterations to this file will result in global alterations to each page
-//-------------------------------------------------------------------------------------
+//--------------------------------------------------------------
 
-doctype 5
+doctype html
+//if IE 8
+	html(lang='en').ie8
+//if IE 9
+	html(lang='en').ie9
+//if gt IE 9
+	<!--><html lang='en'><!--
+
+block setup
 
 head
-	include core/css
+	include meta
+	
+	//- CSS sources
+	link(rel="stylesheet", href="#{environment.dir}css/main.css", type="text/css")
+	script(src="#{environment.dir}js/libhead-min.js")
 
-body
+body(data-js-class=jsClass)
 	block content
-	include core/js
+
+	script(src="#{environment.dir}js/libfoot-min.js")
+	script(src="#{environment.dir}js/main-min.js")
