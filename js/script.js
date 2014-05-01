@@ -1,0 +1,1 @@
+$(function(){var a=0,b=$(".frame").length;$(".frames").mousewheel(function(c,d,e,f){f>0?a++:a--,a>=b&&(a=0),0>a&&(a=b-1),$(".frame").each(function(){$(this).removeClass("show")}),$(".frame").eq(a).addClass("show")})});
